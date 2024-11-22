@@ -7,11 +7,14 @@
 Track my team's work using Agile best practices like Kanban.
 
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [Questions](#questions)
+- [Kanban-board](#kanban-board)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [Questions](#questions)
+  - [License](#license)
 
 ## Installation
 1. Go to the website: https://kanban-board-8dbs.onrender.com/
@@ -22,7 +25,12 @@ Track my team's work using Agile best practices like Kanban.
 3. Type in the credentials
 - username = SunnyScribe
 - password = password
+
+![login page](./assets/login.png)
+
 4. Submit and see the kanban board populate.
+![kanban page](./assets/board.png)
+
 
 ## Credits
 I welcome contributions to our project. Please see the [Contributing](#contributing) section.

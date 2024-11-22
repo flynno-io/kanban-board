@@ -9,11 +9,10 @@ const login = async (userInfo: UserLogin) => {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify(userInfo),
-		})
+		});
 
 		// Parse the response body as JSON
-		const data = await response.json()
-    console.log('data', data)
+		const data = await response.json();
 
 		// Throw error if response status is not OK (200-299)
 		if (!response.ok) {

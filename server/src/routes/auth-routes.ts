@@ -24,10 +24,11 @@ export const login = async (req: Request, res: Response) => {
   }
 
   // Get the secret key from environment variables
-  const secretKey = process.env.JWT_SECRET_KEY || '';
+  const secretKey = process.env.JWT_SECRET_KEY || 'test_secret_key';
 
   // Generate a JWT token for the authenticated user
   const token = jwt.sign({ username }, secretKey, { expiresIn: '1h' });
+  console.log(token);
   return res.json({ token });  // Send the token as a JSON response
 };
 

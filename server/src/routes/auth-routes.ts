@@ -28,7 +28,7 @@ export const login = async (req: Request, res: Response) => {
 
   // Generate a JWT token for the authenticated user
   const token = jwt.sign({ username }, secretKey, { expiresIn: '1h' });
-  console.log(token);
+  console.log('token', token);
   return res.json({ token });  // Send the token as a JSON response
 };
 

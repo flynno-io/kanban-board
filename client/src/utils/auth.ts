@@ -2,8 +2,10 @@ import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 class AuthService {
   getProfile() {
-    // TODO: return the decoded token
-
+    // return the decoded token
+    const token = this.getToken();
+    const decoded: JwtPayload = jwtDecode(token);
+    return decoded;
   }
 
   loggedIn() {
@@ -41,7 +43,7 @@ class AuthService {
     localStorage.removeItem('id_token');
 
     // redirect to the login page
-    window.location.assign('/login');
+    window.location.assign('/');
   }
 }
 
